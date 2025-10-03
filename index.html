@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BumbuVibes - Rasa Nusantara dengan Gaya Baru</title>
+    <!-- Memuat Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memanggil konfigurasi Tailwind & Style khusus -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-light-text text-dark-bg">
+
+    <!-- 1. HEADER / NAVIGATION -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black text-primary-red flex items-center">
+                <span class="mr-1">🌶️</span> BUMBU<span class="text-accent-green">VIBES</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#produk" class="hover:text-primary-red transition duration-300">Produk</a>
+                <a href="#kenapa" class="hover:text-primary-red transition duration-300">Kenapa Kami</a>
+                <a href="#testimoni" class="hover:text-primary-red transition duration-300">Testimoni</a>
+                <a href="#beli" class="text-primary-red border border-primary-red px-4 py-1 rounded-full hover:bg-primary-red hover:text-white transition duration-300">Beli Sekarang</a>
+            </nav>
+            <button class="md:hidden text-dark-bg focus:outline-none" id="menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero-bg h-[60vh] sm:h-[70vh] flex items-center justify-center text-white text-center rounded-b-3xl">
+        <div class="p-4 sm:p-8 max-w-4xl">
+            <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4 tracking-tighter">
+                RASA NUSANTARA, <span class="text-secondary-yellow">VIBES BARU.</span>
+            </h1>
+            <p class="text-xl sm:text-2xl font-light mb-8">
+                BumbuVibes menghadirkan esensi otentik masakan Indonesia, praktis siap masak. Ciptakan mahakarya rasa dalam hitungan menit.
+            </p>
+            <a href="#produk"
+                class="inline-block bg-accent-green text-dark-bg text-xl font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 vibrant-shadow">
+                Jelajahi Bumbu Kami!
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. PRODUCT SHOWCASE -->
+    <section id="produk" class="py-16 sm:py-24 bg-light-text">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-dark-bg">Koleksi Bumbu 'Vibes' Kami</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Produk cards (Bali, Padang, Jawa) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. WHY US / FEATURE SECTION -->
+    <section id="kenapa" class="py-16 sm:py-24 bg-dark-bg text-light-text">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-16 text-secondary-yellow">Kenapa Harus BumbuVibes?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Fitur cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TESTIMONIALS -->
+    <section id="testimoni" class="py-16 sm:py-24 bg-light-text">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-primary-red">Apa Kata Mereka?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Testimoni cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CTA / CONTACT & FOOTER -->
+    <footer id="beli" class="bg-dark-bg py-12 text-light-text">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-extrabold mb-4 text-secondary-yellow">Siap Menghadirkan "Vibes" Baru di Dapur Anda?</h3>
+            <p class="text-xl font-light mb-8 text-gray-300">
+                Dapatkan semua koleksi bumbu premium BumbuVibes sekarang juga!
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-10">
+                <a href="#" class="bg-primary-red text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 hover:bg-opacity-80">
+                    Beli di Shopee
+                </a>
+                <a href="#" class="bg-accent-green text-dark-bg py-3 px-8 rounded-full text-lg font-bold transition duration-300 hover:bg-opacity-80">
+                    Hubungi WhatsApp
+                </a>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 mt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 BumbuVibes. Hak Cipta Dilindungi.</p>
+                <div class="flex space-x-4 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white transition duration-200">Instagram</a>
+                    <a href="#" class="hover:text-white transition duration-200">TikTok</a>
+                    <a href="#" class="hover:text-white transition duration-200">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
